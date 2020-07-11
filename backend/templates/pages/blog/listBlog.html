@@ -1,0 +1,169 @@
+{% extends 'base.html' %} {% load static %} {% block content%}
+<!-- Start Bottom Header -->
+
+<div class="page-area">
+  <div class="breadcumb-overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="breadcrumb text-center">
+          <div class="section-headline white-headline text-center">
+            <h3>Blogs</h3>
+          </div>
+          <ul>
+            <li class="home-bread">Home</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% if blogs %}
+<!-- END Header -->
+<!--Blog Area Start-->
+<div class="blog-area fix area-padding">
+  <div class="container">
+    <div class="row">
+      <div class="blog-sidebar-right">
+        <div class="col-md-7 col-sm-7 col-xs-12">
+          <div class="row">
+            <div class="blog-left-content">
+              <!-- Start single blog -->
+              {% for blog in blogs %}
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="single-blog row">
+                  <div class="blog-image col-md-6">
+                    <a class="image-scale" href="#">
+                      <img src="{{ blog.poster.first }}" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="blog-content col-md-6">
+                    <div class="">
+                      <div class="blog-meta">
+                        <span class="admin-type py-3">
+                          <i class="fa fa-user"></i>
+                          Admin
+                        </span>
+                        <span class="date-type">
+                          <i class="fa fa-calendar"></i>
+                          {{blog.created_at}}
+                        </span>
+                        <!-- <span class="comments-type">
+                          <i class="fa fa-comment-o"></i>
+                          13
+                        </span> -->
+                      </div>
+                    </div>
+                    <a href="{% url 'blog_detail' blog.id %}">
+                      <h4 style="padding-bottom: unset; padding-left:10px;">{{ blog.title }}</h4>
+                    </a>
+
+                    <div class="blog_quote mx-0 text-justify">
+                      {{ blog.quote }}
+                    </div>
+                    <div class="blog-meta">
+                      <a class="blog-btn" href="{% url 'blog_detail' blog.id %}"> Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+
+              <div class="col-md-12 col-sm-12 col-xs-12" style="padding-right: unset;">
+                <div class="blog-pagination">
+                  <ul class="pagination">
+                    {% if current_page > 1 %}
+                    <li><a href="/blogs/?page={{current_page|add:-1}}"><i class="fa fa-backward"></i></a></li>
+                    {% endif %}
+                    {% for page in list_page %}
+                    <li class=""><a href="/blogs/?page={{page}}">{{page}}</a></li>
+                    {% endfor %}
+                    {% if current_page < max_page %}
+                    <li><a href="/blogs/?page={{current_page|add:1}}"><i class="fa fa-forward"></i></a></li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Start Right Sidebar blog -->
+        <div class="col-md-5 col-sm-5 col-xs-12">
+          <div class="left-head-blog right-side">
+            <div class="left-blog-page">
+              <!-- search option start -->
+              <form action="{% url 'search' %}" method="get">
+                <div class="blog-search-option">
+                  <input type="text" name="search" placeholder="Search..." />
+                  <button class="button" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </form>
+              <!-- search option end -->
+            </div>
+            <div class="left-blog-page">
+              <div class="left-blog blog-category">
+                <h4>categories</h4>
+                <ul>
+                  {% for cate in count_cate %}
+                  <li><a
+                      href="/blog_filter/?category={{cate.category}}">{{cate.category}}</a><span>{{cate.count}}</span>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="left-blog-page">
+              <!-- recent start -->
+              <div class="left-blog">
+                <h4>recent post</h4>
+                <div class="recent-post">
+                  <!-- start single post -->
+                  {% for blog in recent %}
+                  <div class="recent-single-post">
+                    <div class="post-img py-2 border">
+                      <a href="{% url 'blog_detail' blog.id %}"> <img style="border: .5px  rgb(228, 224, 224) dotted"
+                          src="{{ blog.poster.first }}" alt="" /></a>
+                    </div>
+                    <div class="pst-content">
+                      <p>
+                        <a href="{% url 'blog_detail' blog.id %}">{{blog.title}}</a>
+                      </p>
+                      <span class="date-type">
+                        {{blog.created_at}}
+                      </span>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <div class="left-blog-page">
+              <div class="left-tags blog-tags">
+                <div class="popular-tag left-side-tags left-blog">
+                  <h4>popular tags</h4>
+                  <ul>
+                    {% for cate in category %}
+                    <li><a href="/blog_filter/?category={{cate.title}}">{{cate.title}}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Right Sidebar -->
+    </div>
+    <!-- End row -->
+  </div>
+</div>
+{% else %}
+<h5 class="text-center col-md-12"> Không tìm thấy yêu cầu tìm kiếm</h5>
+<p class="text-center col-md-12"> <a href="/" class="btn btn-outline-success">Continue</a></p>
+{% endif %}
+<!--End of Blog Area-->
+{%endblock%}

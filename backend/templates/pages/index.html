@@ -1,0 +1,480 @@
+{% extends 'base.html' %} {% load static %}
+{% block meta %}
+<meta content="CC">
+{%endblock%}
+{% block content%}
+<div class="intro-area intro-area-3">
+    <div class="intro-carousel">
+        <div class="intro-content-2">
+            <div class="slider-images">
+                <img src=" {% static 'img/home/home1.png' %}" alt="Visitek banner ảnh chính">
+            </div>
+            <div class="slider-content">
+                <div class="display-table">
+                    <div class="display-table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- layer 1 -->
+                                    <div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h2 class="title2"> <a title="Bạn cần xây dựng và phát triển thương hiệu?">Bạn
+                                                cần xây dựng
+                                                và phát triển thương hiệu?</a></h2>
+                                    </div>
+                                    <!-- layer 2 -->
+                                    <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
+                                        <p>Sở hữu ngay website cho riêng mình với dịch vụ thiết kế website chuyên
+                                            nghiệp.</p>
+                                    </div>
+                                    <!-- layer 3 -->
+                                    <div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
+                                        <a title="Visitek nút thể hiện dịch vụ" href="/services"
+                                            class="ready-btn left-btn ">Dịch Vụ</a>
+                                        <a title="Visitek nút thể hiện liên lạc" href="/contact"
+                                            class="ready-btn right-btn">Liên Hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-content-2 slide-2">
+            <div class="slider-images">
+                <img src="{% static 'img/banner1.png' %}" alt="Visitek banner ảnh chính mobile">
+            </div>
+            <div class="slider-content">
+                <div class="display-table">
+                    <div class="display-table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- layer 1 -->
+                                    <div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h2 class="title2"> <a title="Bạn muốn mua tên miền và hosting?">Bạn
+                                                muốn mua tên miền và hosting?</a> </h2>
+                                    </div>
+                                    <!-- layer 2 -->
+                                    <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
+                                        <p>Liên hệ ngay với chúng tôi để được tư vấn và nhận mức giá ưu đãi.</p>
+                                    </div>
+                                    <!-- layer 3 -->
+                                    <div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
+                                        <a title="Visitek nút thể hiện dịch vụ mobile" href="#"
+                                            class="ready-btn left-btn ">Dịch Vụ</a>
+                                        <a title="Visitek nút thể hiện liên lạc mobile" href="#"
+                                            class="ready-btn right-btn">Liên Hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Slider Area -->
+<!-- Start service area -->
+<div class="service-area service-area-2 bg-color area-padding-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                    <h3> <a title="Dịch vụ chuyên nghiệp">Dịch vụ chuyên nghiệp</a> </h3>
+                    <p>Giúp bạn có thể tiếp cận được với chuyên gia có khả năng và kinh nghiệm
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="all-services">
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="service-icon">
+                            <a title="Logo thiết kế sản phẩm" href="service-details.html"><span href=""
+                                    class="flaticon-052-project-plan"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4 href="service-details.html"><a title="Dịch vụ thiết kế sản phẩm"
+                                        href="service-details.html">Thiết kế sản phẩm
+                                    </a></h4>
+                                <p>Chúng tôi giúp cho sự hiện diện trực tuyến của bạn trở nên tuyệt vời.</p>
+                                <a title="Dịch vụ thiết kế sản phẩm" class="service-btn"
+                                    href="service-detail-repair.html"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.5s"
+                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="service-icon">
+                            <a title="Logo bảo trì hệ thống" ref="service-detail-repair.html"><span
+                                    href="/service-detail-repair" class="flaticon-031-financial"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4><a title="Dịch vụ bảo trì hệ thống" href="/service-detail-repair">Bảo trì hệ
+                                        thống</a></h4>
+                                <p>Hệ thống CNTT của doanh nghiệp chạy trơn tru hơn và ít khả năng bị gián đoạn.</p>
+                                <a title="Xem chi tiết dịch vụ bảo trì hệ thống" class="service-btn"
+                                    href="/service-detail-repair"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-icon">
+                            <a title="Logo bảo mật hệ thống" href="/service-detail-security"><span
+                                    class="flaticon-057-statistics"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4><a title="Dịch vụ bảo mật hệ thống" href="/service-detail-security">Bảo mật
+                                        hệ thống</a></h4>
+                                <p>Hãy chắc chắn rằng doanh nghiệp của bạn đã được bảo vệ an toàn !</p>
+                                <a title="Xem chi tiết dịch vụ bảo mật hệ thống" class="service-btn"
+                                    href="/service-detail-repair"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-icon">
+                            <a title="Logo tư vấn và triển khai hệ thống" href="/service-detail-consult"><span
+                                    class="flaticon-012-business"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4><a title="Dịch vụ tư vấn và triển khai hệ thống" href="/service-detail-consult">Tư
+                                        vấn và triển khai hệ thống</a></h4>
+                                <p>Giúp doanh nghiệp hoạt động hiệu quả và cuối cùng là đạt được lợi nhuận trong
+                                    kinh doanh.</p>
+                                <a title="Xem chi tiết dịch vụ tư vấn và triển khai hệ thống" class="service-btn"
+                                    href="/service-detail-repair"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-icon">
+                            <a title="Logo dịch vụ IT OUTSOURCE" href="/service-detail-outsource"><span
+                                    href="/service-detail-outsource" class="flaticon-041-network"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4><a title="Dịch vụ IT OUTSOURCE" href="service-detail-outsource.html">Dịch vụ IT
+                                        OUTSOURCE</a></h4>
+                                <p>Các doanh nghiệp giao công việc liên quan tới công nghệ thông tin cho một bên thứ
+                                    ba cung cấp dịch vụ này.</p>
+                                <a title="Xem chi tiết dịch vụ IT OUTSOURCE" class="service-btn"
+                                    href="/service-detail-repair"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-icon">
+                            <a title="Logo dịch vụ Quản trị hệ thống" href="/service-detail-manage"><span
+                                    class="flaticon-002-analysis"></span></a>
+                        </div>
+                        <div class="service-inner">
+                            <div class="service-content">
+                                <h4><a title=" Dịch vụ quản trị hệ thống" href="/service-detail-manage">Quản trị
+                                        hệ thống</a></h4>
+                                <p>Giúp loại bỏ sự khó khăn của bạn về hệ thống và để chúng tôi hỗ trợ , phát triển
+                                    công việc của bạn : thu hút khách hàng và phát triển công việc kinh doanh.</p>
+                                <a title="Xem chi tiết dịch vụ quản trị hệ thống" class="service-btn"
+                                    href="/service-detail-repair"><i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single dervices -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End service area -->
+
+<div class="container-full fix">
+
+    <div class="row ">
+        <div class="col-md-5 col-sm-4 col-xs-12 ">
+            <!-- <div class="about-area area-padding about-2 fix"> -->
+            <div class="about-image">
+                <img src="{% static 'img/home/homeConsult.png' %}"
+                    alt="Hình ảnh slogan làm hài lòng khách hàng của chúng tôi.">
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- column end -->
+        <div class="col-md-7 col-sm-8 col-xs-12">
+            <div class="support-all about-content">
+                <div class="section-headline right-headline white-headline">
+                    <h3>Hãy để chúng tôi làm <span class="color">hài lòng</span> bạn bằng những gì chúng tôi
+                        đang có
+                    </h3>
+                </div>
+
+                <div class="about-company">
+                    <div class="single-about">
+                        <span class="about-text">Đội ngũ chuyên nghiệp</span>
+                        <span class="about-text">Thanh toán bảo mật</span>
+                        <span class="about-text">Hỗ trợ trực tuyến</span>
+                    </div>
+                    <div class="single-about">
+                        <span class="about-text">Định hướng rõ ràng</span>
+                        <span class="about-text">Dịch vụ quốc tế</span>
+                        <span class="about-text">Chính sách Marketing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- column end -->
+    </div>
+
+</div>
+
+<!-- about-area end -->
+<!-- Start Counter area -->
+<div class="counter-area fix ">
+    <div class="container">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="counter-image">
+                    <div class="rotmate-image rotateme">
+                        <img src="{% static 'img/home/home5.png' %}" alt="Hình ảnh Visitek">
+                    </div>
+                    <div class="top-img">
+                        <img src="{% static 'img/home/name.png' %}" alt="Hình ảnh Visitek">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12" class="options">
+                <div class="fun-text-all">
+                    <!-- single counter  -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="fun_text wow fadeInUp" data-wow-delay="0.2s">
+                            <span title="Tổng dự án Visitek đã làm" class="counter-icon"><i
+                                    class="ti-layers"></i></span>
+                            <span title="Tổng dự án Visitek đã làm" class="counter">30</span>
+                            <h4 title="Tổng dự án Visitek đã làm">Total projects</h4>
+                        </div>
+                    </div>
+                    <!-- single counter  -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="fun_text wow fadeInUp" data-wow-delay="0.3s">
+                            <span title="Tổng dự án Visitek đã làm" class="counter-icon"><i class="ti-world"></i></span>
+                            <span title="Tổng dự án Visitek đã làm" class="counter">10</span>
+                            <h4 title="Tổng dự án Visitek đã làm">Worldwide</h4>
+                        </div>
+                    </div>
+                    <!-- single counter  -->
+                    <div class="award">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="fun_text wow fadeInUp" data-wow-delay="0.4s">
+                                <span title="Tổng giải thưởng Visitek" class="counter-icon"><i
+                                        class="ti-cup"></i></span>
+                                <span title="Tổng giải thưởng Visitek" class="counter">2</span>
+                                <h4 title="Tổng giải thưởng Visitek">Awards win</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single counter  -->
+                    <div class="team">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="fun_text wow fadeInUp" data-wow-delay="0.5s">
+                                <span title="Tổng thành viên ở đội ngũ Visitek" class="counter-icon"><i
+                                        class="ti-user"></i></span>
+                                <span title="Tổng thành viên ở đội ngũ Visitek" class="counter">30</span>
+                                <h4 title="Tổng thành viên ở đội ngũ Visitek">Team member</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single counter  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Counter area -->
+
+<!-- Start digital-services area -->
+<div class="service-area service-area-2 bg-color area-padding-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline text-center">
+                    <h3> <a title="LĨNH VỰC LÀM VIỆC">LĨNH VỰC LÀM VIỆC</a> </h3>
+                    <p>Xây dựng và triển khai công nghệ trên nhiều lĩnh vực khác nhau.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="we-services">
+                <!-- digital-services -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s1-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a.png' %}"
+                                        alt="Sàn kinh tế - tài chính"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Sàn Kinh tế - Tài chính</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s2-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a2.png' %}"
+                                        alt="Giáo dục - Công nghệ"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Giáo dục - Công nghệ</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s4-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a3.png' %}"
+                                        alt="Truyền thông - Xã hội"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Truyền thông - Xã hội </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s3-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a4.png' %}"
+                                        alt="Tài nguyên môi trường"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Tài nguyên môi trường</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+                <div class="col-md-offset-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s5-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a5.png' %}"
+                                        alt="Chăm sóc sức khỏe & sắc đẹp"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Chăm sóc sức khỏe & sắc đẹp</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="digital-services">
+                        <div class="digital-wel s5-item">
+                            <div class="digital-img">
+                                <a class="digital-icon"><img src="{% static 'img/icon/a6.png' %}"
+                                        alt="Cộng đồng & Mạng xã hội"></a>
+                            </div>
+                            <div class="digital-content">
+                                <h4>Cộng đồng & Mạng xã hội</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- digital-services -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End digital-servicesarea -->
+<div class="blog-area fix bg-color area-padding-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h3>TIN TỨC</h3>
+          <p>Cập nhật các tin tức công nghệ mới nhất</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="blog-grid home-blog">
+        <!-- Start single blog -->
+        {% if blogs is not None %}
+        {% for blog in blogs %}
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="blog-container">
+
+            <div class="single-blog">
+              <div class="blog-image">
+                <a class="image-scale" href="#">
+                  <img src="{{ blog.images.first }}" alt="">
+                </a>
+              </div>
+              <div class="blog-content">
+                <div> <a href="{% url 'blog_detail' blog.id %}">
+                    <h4>{{ blog.title }}</h4>
+                  </a></div>
+
+                <div class="blog-meta">
+                  <span class="admin-type">
+                    <i class="fa fa-user"></i>
+                    Admin
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>
+                    {{blog.created_at}}
+                  </span>
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    32
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- End single blog -->
+        {% endfor %}
+        {% else %}
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
